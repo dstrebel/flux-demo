@@ -290,6 +290,7 @@ metadata:
   labels:
     control-plane: controller-manager
     gatekeeper.sh/system: "yes"
+    app: gatekeeper
   name: gatekeeper-controller-manager
   namespace: gatekeeper-system
 spec:
@@ -307,6 +308,7 @@ spec:
       labels:
         control-plane: controller-manager
         gatekeeper.sh/system: "yes"
+        app: gatekeeper
     spec:
       containers:
       - args:
